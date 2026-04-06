@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/pacientes/pacientes_screen.dart';
 import 'screens/medicos/medicos_screen.dart';
 import 'screens/citas/citas_screen.dart';
+import 'screens/historial/historial_screen.dart';
 
 void main() {
   runApp(const HospitalApp());
@@ -38,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
     PacientesScreen(),
     MedicosScreen(),
     CitasScreen(),
+    HistorialScreen(),
   ];
 
   @override
@@ -60,6 +62,10 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.calendar_today),
             label: 'Citas',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.history),
+            label: 'Historial',
           ),
         ],
       ),
